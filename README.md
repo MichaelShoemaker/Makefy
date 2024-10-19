@@ -18,7 +18,7 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/makefy.git
+    git clone https://github.com/MichaelShoemaker/makefy.git
     ```
 
 2. Navigate to the directory:
