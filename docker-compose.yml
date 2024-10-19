@@ -1,0 +1,21 @@
+services:
+  flask_app:
+    image: python:3.9-slim
+    container_name: flask_app
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python app.py
+    ports:
+      - "5000:5000"
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
